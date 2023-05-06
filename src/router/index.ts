@@ -1,6 +1,6 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
+import Home from '@/views/Home.vue';
+import About from '@/views/About.vue';
 
 const routes: RouteRecordRaw[] = [
   {
@@ -16,7 +16,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/'),
   routes,
 });
 
